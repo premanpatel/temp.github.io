@@ -22,8 +22,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
-email = document.getElementById('email').value
-password = document.getElementById('password').value
 
 document.getElementById("signup").addEventListener('click', function(){
     const email = document.getElementById("email").value
