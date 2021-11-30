@@ -1,22 +1,28 @@
 {
   "hosting": {
-    "public": "",
+    "public": "temp.github.io",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
   "emulators": {
     "hosting": {
       "port": 5000,
       "public": "static",
-            "rewrites": [
-                {
-                    "source": "**",
-                    "destination": "/index.html"
-                }
-            ]
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     },
     "ui": {
       "enabled": true
